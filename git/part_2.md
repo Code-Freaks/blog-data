@@ -1,13 +1,13 @@
 # Git tutorial part-2
 In this tutorial I will walk you through using branches in git. And deploy a static website using github pages.
 
-if you haven't checked out the part1 of this tutorial please do check it out.
+if you haven't checked out the part-1 of this tutorial please do check it out.
 ## Branches intro
 Think of branches as multiple workspaces for the same project.
 ```
 git branch
 ```
-this lists all the branches in a repository.
+this lists all the branches in a repository.<br>
 Each branch represents independent line of development. You can combine 2 branches with `merge` command <br>
 
 Think of a scenario where you are developing a website. In such a case you will need at least 2 branches <br>
@@ -22,17 +22,20 @@ is stable in the development branch. you can `merge` the Development branch to t
 making the new code accessible to all the end users.
 
 ## Create a new repository.
-[Create new a repository](https://github.com/new) in github. give the repository name as `<username>.github.io` 
-[replace username with your github username]. click on create new repository.
+[Create new a repository](https://github.com/new) in github. <br>
+Give the repository name as `<username>.github.io` [replace username with your github username] <br>
+this will automatically create a new website available under <username>.github.io.
+An example is my website [code-freaks.github.io](https://code-freaks.github.io).
 
 ## clone the repository to your local system
 ```
-git clone <username>.github.io
+git clone https://github.com/<username>.github.io
 cd <username>.github.io
 ```
 
 ## Add necessary files and push to master
-now that you have cloned the repository, create a `index.html` file
+Now that you have cloned the repository, Lets add a landing page for your website.<br>
+create an `index.html` file.
 
 
 copy paste the contents to index.html 
@@ -45,17 +48,17 @@ copy paste the contents to index.html
 </html>
 ``` 
 
-add index.html
+Lets add `index.html` to git
 ```
 git add index.html
 ```
 
-commit the changes
+Once it is added, We should commit the changes
 ```
 git commit -am "added index.html"
 ```
 
-push to master
+Now we should push to github
 ```
 git push origin master
 ```

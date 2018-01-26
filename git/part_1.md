@@ -4,7 +4,7 @@ Git is a version control system. There are so much stuff that goes with the prev
 but in this tutorial I will walk though using it practically.
 
 This Tutorial assumes that you have a github account. if not you can signup [here](https://github.com/join?source=code-freaks.github.io). It's free.<br>
-[The toturial will also work with other git enabled repositories link BitBucket, GitLab etc ...]
+[The tutorial will also work with other git enabled repositories link BitBucket, GitLab etc ...]
 
 ### Download git
 You can download git from [here](https://git-scm.com/), or you can use your package manager to install git.<br>
